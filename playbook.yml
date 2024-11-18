@@ -1,0 +1,7 @@
+- name: Testing of include_tasks
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+  - name: Import debug tasks
+    include_tasks: "debug.yml"
